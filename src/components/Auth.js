@@ -5,7 +5,8 @@ import { authActions } from "../store/auth-slice";
 import "./Auth.css";
 
 const Auth = () => {
-  const dispatch = useDispatch
+  const dispatch = useDispatch()
+  // here i used this function handleSubmit event for the login section
   const handleSubmit = (e) => {
     e.preventDefault()
     dispatch(authActions.login())
